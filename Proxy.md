@@ -2,6 +2,11 @@
 
 # 代理模式
 
+代理
+
+	有绝对控制权 把工作交给目标对象来做 单一职责原则
+	
+
 解耦
 
 	将目标对象与使用的用户隔离开，
@@ -31,7 +36,7 @@ aop
 		}
 	}
 	
-代理类
+代理类1
 
 	public class BuyHouseProxy implements BuyHouse {
 
@@ -50,6 +55,23 @@ aop
 		}
 	}
 
+代理类2
+
+	public class BuyHouseProxy implements BuyHouse {
+	
+		private BuyHouse buyHouse;
+
+		public BuyHouseProxy(final BuyHouse buyHouse) {
+			this.buyHouse = buyHouse;
+		}
+
+		@Override
+		public void buyHosue() {
+			System.out.println("把钱拿去了旅游");
+
+		}
+	}
+
 客户端
 
 	public class ProxyTest {
@@ -60,4 +82,10 @@ aop
 			buyHouseProxy.buyHosue();
 		}
 	}
+
+
+
+# 静态代理 动态代理
+
+参考JDK动态代理
 
