@@ -24,3 +24,7 @@ https://gof.quanke.name/%E5%AF%B9%E8%B1%A1%E9%97%B4%E7%9A%84%E8%81%94%E5%8A%A8%E
 《Head First Design Pattern》
 设计模式之禅
 
+
+# 综合使用
+
+https://blog.csdn.net/landy8530/article/details/80567281
